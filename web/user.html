@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
-        #header{
+        .frame{
+
+        }
+
+        .header{
             background-color:#3f51b5;
-            height: 20%;
+            height: 15%;
             text-align: center;
             vertical-align: middle;
             font-family: a반달곰;
@@ -14,11 +18,13 @@
             padding: 100px 0px;
         }
 
-        #header_text{
-
+        .container{
+            height: 70%;
+            font-family: 나눔바른고딕;
         }
-        #bottom{
-            height: 20%;
+
+        .footer{
+            height: 15%;
             background-color:#3f51b5;
             text-align: center;
             padding: 100px 0px;
@@ -26,17 +32,24 @@
             color: antiquewhite;
         }
 
-
     </style>
 </head>
 <body>
-<div id = "header">
-    <div id = "header_text"><h1>User Page</h1></div>
-</div>
-<div ></div>
-<div id = "bottom">
-    <div id = "bottom_text"><h3>맨 아래</h3></div>
-</div>
+<div class="frame">
+    <div class = "header">
+        <div class = "header_text"><h1>User Page</h1></div>
+    </div>
 
+    <div class = "container">
+        <div class = "content" >
+            <h1>그래프</h1>
+            <p>graph graph graph graph</p>
+        </div>
+    </div>
+
+    <div class = "footer">
+        <div class = "bottom_text"><h3>맨 아래</h3></div>
+    </div>
+</div>
 </body>
 </html>
