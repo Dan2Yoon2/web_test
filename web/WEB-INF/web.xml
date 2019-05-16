@@ -49,4 +49,12 @@
         <extension>wsdl</extension>
         <mime-type>text/xml</mime-type>
     </mime-mapping>
+    <filter>
+        <filter-name>cors</filter-name>
+        <filter-class>controller.SimpleCORSFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>cors</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
 </web-app>

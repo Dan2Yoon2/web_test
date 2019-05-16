@@ -1,38 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+    <!--userPage CSS-->
+    <link rel = "stylesheet" type = "text/css" href = "assets/css/userPage.css">
+    <!-- jQuery UI CSS파일-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!--tui-chart CSS-->
+    <link rel="stylesheet" type="text/css" href="assets/dist/tui-chart.css" />
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/codemirror.css'/>
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/addon/lint/lint.css'/>
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/theme/neo.css'/>
+
     <meta charset="UTF-8">
     <title>Title</title>
-    <style>
-        .frame{
 
-        }
-
-        .header{
-            background-color:#3f51b5;
-            height: 15%;
-            text-align: center;
-            vertical-align: middle;
-            font-family: a반달곰;
-            color: antiquewhite;
-            padding: 100px 0px;
-        }
-
-        .container{
-            height: 70%;
-            font-family: 나눔바른고딕;
-        }
-
-        .footer{
-            height: 15%;
-            background-color:#3f51b5;
-            text-align: center;
-            padding: 100px 0px;
-            font-family: a반달곰;
-            color: antiquewhite;
-        }
-
-    </style>
 </head>
 <body>
 <div class="frame">
@@ -42,14 +24,61 @@
 
     <div class = "container">
         <div class = "content" >
-            <h1>그래프</h1>
-            <p>graph graph graph graph</p>
+            <div class = "left-box">
+                <div class = "date">
+                    <table>
+                        <tr>
+                            <td><input name="start_date" type="text" id="start_date"></td>
+                            <td><input name="end_date" type="text" id="end_date"></td>
+                            <td></td>
+                            <td><input id = "todaySelect" type = "text"></td>
+                            <td><button id = "today">오늘</button></td>
+                        </tr>
+                    </table>
+                </div>
+                <h1>그래프</h1>
+                <p>graph graph graph graph</p>
+                <div  id='chart-area'></div>
+                <div><h1>통계표 자리</h1></div>
+
+            </div>
+            <div class = "right-box">
+                <h3 >요 금</h3>
+                <div class = pay>
+                <h1 id = "pay">139,800</h1><h2>원</h2>
+                </div>
+                <input type = "button" value = "결제하기" onclick="showPopup();">
+            </div>
+
         </div>
     </div>
 
     <div class = "footer">
-        <div class = "bottom_text"><h3>맨 아래</h3></div>
+        <div class = "bottom_text"><h3>footer</h3></div>
     </div>
 </div>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<!--<script src="assets/js/jquery.min.js"></script>-->
+<!-- jQuery UI 라이브러리 js파일 -->
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- tui-chart script -->
+<script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/core.js'></script>
+<script type='text/javascript' src='https://uicdn.toast.com/tui.code-snippet/v1.5.0/tui-code-snippet.min.js'></script>
+<script type='text/javascript' src='https://uicdn.toast.com/tui.chart/latest/raphael.js'></script>
+<script src='assets/dist/tui-chart.js'></script>
+<!--CROS-->
+<script type="text/javascript" src="assets/js/cors.js"></script>
+
+<!--날짜 정하고, 그래프 띄움-->
+<script src = assets/js/date.js></script>
+<!--오늘날짜 띄움-->
+<script src = assets/js/todaySelect.js></script>
+<!--결제하기 팝업창 띄움-->
+<script src = "assets/js/payPopup.js"></script>
+
+
+
+
 </body>
 </html>
