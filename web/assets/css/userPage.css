@@ -42,10 +42,25 @@
     width : 30%;
 }
 
-.pay h1,
-.pay h2{
+.right_content{
+    margin: 30px;
+    margin-top: 75px;
+}
+
+
+.kw h2, .kw h4{
     display: inline;
 }
+
+.pay{
+    margin-top : 60px;
+    margin-bottom: 30px;
+}
+
+.pay h1, .pay h2{
+    display: inline;
+}
+
 
 .footer{
     height: 5%;
