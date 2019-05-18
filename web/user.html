@@ -30,24 +30,30 @@
                         <tr>
                             <td><input name="start_date" type="text" id="start_date"></td>
                             <td><input name="end_date" type="text" id="end_date"></td>
-                            <td></td>
-                            <td><input id = "todaySelect" type = "text"></td>
+                            <td colspan="3"></td>
                             <td><button id = "today">오늘</button></td>
                         </tr>
                     </table>
                 </div>
+                <div class = lineChart>
                 <h1>그래프</h1>
-                <p>graph graph graph graph</p>
-                <div  id='chart-area'></div>
+                <p>사용량과 판매량</p>
+                    <div  id='chart-area'></div>
+                </div>
+                <div class = columnChart>
+                    <h1>비교 그래프</h1>
+                    <div id = 'chart-area2'></div>
+                </div>
                 <div><h1>통계표 자리</h1></div>
 
             </div>
             <div class = "right-box">
                     <div class = "right_content">
                     <div class = kw>
-                        <h3>K W</h3>
-                        <h2 id = usage>사용량 </h2><h4>KW</h4><br>
-                        <h2 id = sales_rate>판매량 </h2><h4>KW</h4>
+                        <h3>사용량</h3>
+                        <h2 id = usage>사용량 </h2>&nbsp;&nbsp;<h4>KW</h4><br>
+                        <h3>판매량</h3>
+                        <h2 id = sales_rate>판매량 </h2>&nbsp;&nbsp;<h4>KW</h4>
                     </div>
                 <div class = pay>
                     <h3 >요 금</h3>
@@ -79,7 +85,7 @@
 <!--CROS-->
 <script type="text/javascript" src="assets/js/cors.js"></script>
 
-<!--날짜 정하고, 그래프 띄움-->
+<!--달력에서 날짜 정하고, 그래프 띄움-->
 <script src = assets/js/date.js></script>
 <!--오늘날짜 띄움-->
 <script src = assets/js/todaySelect.js></script>
