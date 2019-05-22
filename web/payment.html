@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="assets/css/pay.css"/>
 
-    <script src = "assets/js/paystyle.js"></script>
+    <link rel="stylesheet" href="assets/pay/pay.css"/>
+
+    <!-- Load the required client component. -->
+    <script src="https://js.braintreegateway.com/web/3.43.0/js/client.min.js"></script>
+
+    <!-- Load Hosted Fields component. -->
+    <script src="https://js.braintreegateway.com/web/3.43.0/js/hosted-fields.min.js"></script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+    <script src = "assets/pay/paystyle.js"></script>
+
+
+
 
 </head>
 <body>
 <div class="sub-body">
     <header class="header">
-        <h1 class="price"><span class="price__dollar"></span>100<span class="price__time"> 원</span></h1>
-        <p class="desc">결제하기</p>
+        <h1 class="price"><span class="price__dollar"></span>결제하기<span class="price__time"></span></h1>
+        <p class="desc">결제하세요</p>
     </header>
 
     <div class="pay-select">
@@ -53,7 +68,7 @@
         </div>
 
         <div class="select-body__content select-body--paypal">
-            <script src="images/kakaopay1.png"
+            <script src="https://www.paypalobjects.com/api/button.js?"
                     data-merchant="braintree"
                     data-id="paypal-button"
                     data-button="subscribe"
@@ -69,12 +84,6 @@
     </div>
 </div>
 
-<script src = "pay/paystyle.js"></script>
-<!-- Load the required client component. -->
-<script src="https://js.braintreegateway.com/web/3.43.0/js/client.min.js"></script>
-
-<!-- Load Hosted Fields component. -->
-<script src="https://js.braintreegateway.com/web/3.43.0/js/hosted-fields.min.js"></script>
 
 </body>
 </html>

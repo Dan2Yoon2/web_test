@@ -1,6 +1,6 @@
 
 
-$(function() {
+$(document).ready(function() {
     //모든 datepicker에 대한 공통 옵션 설정
     $.datepicker.setDefaults({
         dateFormat: 'yy-mm-dd' //Input Display Format 변경
@@ -44,10 +44,12 @@ $(function() {
         dataset = {};
         options = {
             chart: {
-                title: 'line Graph'
+                width: 700,
+                height: 500,
+                title: 'Electricity Usage & Electricity Sales rate'
             },
             yAxis: {
-                title: 'Electronic data',
+                title: 'Amount',
             },
             xAxis: {
                 title: 'Date',

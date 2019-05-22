@@ -1,23 +1,25 @@
-$(function() {
+$(document).ready(function() {
 
     /*tui.chart.registerTheme('myTheme', theme);
     options.theme = 'myTheme';*/
-    let container = document.getElementById('chart-area2');
+
 
     function columnChart() {
         dataset = {};
         options = {
             chart: {
-                title: 'Column Chart',
+                width: 700,
+                height: 500,
+                title: '월별 전기사용량과 전기판매량 ',
                 format: '100'
             },
             yAxis: {
-                title: 'Amount',
-                min: 0,
-                max: 1000
+                title: 'KW',
+                /*min: 0,
+                max: 3000*/
             },
             xAxis: {
-                title: 'Usage & Sales rate'
+                title: '월'
             },
             legend: {
                 align: 'top'
@@ -37,21 +39,22 @@ $(function() {
 
         let usage = document.getElementById('usage');
         let sales_rate = document.getElementById('sales_rate');
+        let container = document.getElementById('chart-area2');
 
         $.ajax({
             url: 'http://192.168.1.24:9090/StaticsController',
             type: 'GET',
-            data: {
+            /*data: {
                month: month,
-               month_use: month_use,
-               month_sale: month_sale
-            },
+              /!* month_use: month_use,
+               month_sale: month_sale*!/
+            },*/
+
+            timeout : 3000,
             success: function (data) {
 
                 dataset = data
                 console.log(dataset);
-
-                container.innerHTML = "";
 
                 var chart = tui.chart.columnChart(container, dataset, options);
 
@@ -66,7 +69,7 @@ $(function() {
                 alert("월 사용량"+month_use+", 월 판매량 "+ month_sale);
             },
             error: function () {
-                alert('Error message');
+                alert('월별 Error message');
             }
         });
     }

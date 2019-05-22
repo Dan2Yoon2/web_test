@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--기본 jquery datepicker CSS-->
+    <!--<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">-->
+    <!--템플릿 CSS-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+
+    <!--cal CSS 얘가 문제-->
+    <link rel="stylesheet" href="assets/cal/cal.css"/>
+    <link rel = "stylesheet" href = "calRight.css">
+
+
+
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" ></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src ="assets/cal/cal.js" ></script>
+    <script src = "cal2.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/dist/tui-chart.css" />
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/codemirror.css'/>
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/addon/lint/lint.css'/>
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/theme/neo.css'/>
+
+    <!-- tui-chart script -->
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/core-js/2.5.7/core.js'></script>
+    <script type='text/javascript' src='https://uicdn.toast.com/tui.code-snippet/v1.5.0/tui-code-snippet.min.js'></script>
+    <script type='text/javascript' src='https://uicdn.toast.com/tui.chart/latest/raphael.js'></script>
+    <script src='assets/dist/tui-chart.js'></script>
+
+
+
+</head>
+<body  class="subpage">
+
+<!-- Header -->
+<header id="header">
+    <div class="logo"><a href="main.html">Hielo <span>by TEMPLATED</span></a></div>
+    <a href="#menu">Menu</a>
+</header>
+
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="logout.jsp">Logout</a></li>
+        <li><a href="userPage.html">User Page</a></li>
+    </ul>
+</nav>
+
+<!-- One -->
+<section id="One" class="wrapper style3">
+    <div class="inner">
+        <header class="align-center">
+            <p>Power Interference Point</p>
+            <h2>User page</h2>
+        </header>
+    </div>
+</section>
+
+<!-- Two -->
+<section id="two" class="wrapper style2" style = "height : 1400px;  font-family: 나눔바른고딕;">
+    <div class = "container" style="height : 1400px; margin: auto;">
+        <div class = "content" >
+            <div class = "left-box">
+                <div class = "date2" >
+                    <hr width="100%", size = "1px", color="#516F85">
+                    <table>
+                        <tr>
+                            <td>
+                                <div class="myWrapper">
+
+                                    <div class="redesign-datepicker-group" data-for="dob">
+                                        <input id="start_date" autocomplete="new-dob" type="date-text" name="dob" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>Start Date</label>
+                                        <div class="input-message"></div>
+                                    </div>
+
+                                    <div class="datepicker" data-for="dob">
+                                        <header>
+                                            <div class="btn-select-year">2019</div>
+                                            <div class="btn-date-label active">Wed, <span class="no-wrap">Nov 23</span></div>
+                                        </header>
+                                        <div>
+                                            <div class="body">
+                                                <div class="section calendar active">
+                                                    <div class="month-controls">
+                                                        <i class="material-icons btn-previous-month">Previous</i>
+                                                        <div class="month-year-label">
+                                                            <span></span>
+                                                            <span></span></span></div>
+                                                        <i class="material-icons btn-next-month">Next</i>
+                                                    </div>
+                                                    <div class="weekdays">
+                                                        <div class="weekday">M</div>
+                                                        <div class="weekday">T</div>
+                                                        <div class="weekday">W</div>
+                                                        <div class="weekday">T</div>
+                                                        <div class="weekday">F</div>
+                                                        <div class="weekday">S</div>
+                                                        <div class="weekday">S</div>
+                                                    </div>
+                                                    <div class="dates">
+
+                                                        <div class="previous month">
+                                                            <div class="date"><span>1</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>2</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>3</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>4</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>5</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>6</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>7</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>8</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>9</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>10</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>11</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>12</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>13</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>14</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>15</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>16</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>17</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>18</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>19</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>20</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>21</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>22</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>23</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>24</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>25</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>26</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>27</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>28</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>29</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>30</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>31</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>32</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>33</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>34</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>35</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>36</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>37</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>38</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>39</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>40</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>41</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>42</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="current month">
+                                                            <div class="date"><span>1</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>2</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>3</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>4</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>5</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>6</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>7</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>8</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>9</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>10</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>11</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>12</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>13</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>14</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>15</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>16</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>17</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>18</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>19</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>20</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>21</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>22</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>23</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>24</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>25</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>26</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>27</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>28</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>29</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>30</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>31</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>32</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>33</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>34</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>35</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>36</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>37</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>38</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>39</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>40</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>41</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>42</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="next month">
+                                                            <div class="date"><span>1</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>2</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>3</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>4</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>5</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>6</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>7</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>8</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>9</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>10</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>11</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>12</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>13</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>14</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>15</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>16</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>17</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>18</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>19</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>20</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>21</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>22</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>23</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>24</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>25</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>26</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>27</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>28</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>29</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>30</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>31</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>32</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>33</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>34</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>35</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>36</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>37</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>38</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>39</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>40</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>41</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>42</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="year-slider section">
+                                                    <div class="years"></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom-controls" style = "color: #6789a2;">
+                                                <!--<button class="btn-cancel">cancel</button>-->
+                                                <button class="btn-ok">ok</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td><img src = "assets/images/and.png" width="30px" height="30px"></td>
+
+                            <td >
+                                <div class="myWrapper">
+                                    <div class="redesign-datepicker2-group" data-for="dob">
+                                        <input id="end_date" autocomplete="new-dob" type="date-text" name="dob" required>
+                                        <span class="highlight"></span>
+                                        <span class="bar"></span>
+                                        <label>End Date</label>
+                                        <div class="input-message"></div>
+                                    </div>
+
+                                    <div class="datepicker2" data-for="dob">
+                                        <header>
+                                            <div class="btn-select-year">2019</div>
+                                            <div class="btn-date-label active">Wed, <span class="no-wrap">Nov 23</span></div>
+                                        </header>
+                                        <div>
+                                            <div class="body">
+                                                <div class="section calendar active">
+                                                    <div class="month-controls">
+                                                        <i class="material-icons btn-previous-month">Previous</i>
+                                                        <div class="month-year-label">
+                                                            <span></span>
+                                                            <span></span></span></div>
+                                                        <i class="material-icons btn-next-month">Next</i>
+                                                    </div>
+                                                    <div class="weekdays">
+                                                        <div class="weekday">M</div>
+                                                        <div class="weekday">T</div>
+                                                        <div class="weekday">W</div>
+                                                        <div class="weekday">T</div>
+                                                        <div class="weekday">F</div>
+                                                        <div class="weekday">S</div>
+                                                        <div class="weekday">S</div>
+                                                    </div>
+                                                    <div class="dates">
+
+                                                        <div class="previous month">
+                                                            <div class="date"><span>1</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>2</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>3</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>4</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>5</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>6</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>7</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>8</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>9</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>10</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>11</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>12</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>13</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>14</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>15</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>16</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>17</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>18</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>19</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>20</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>21</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>22</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>23</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>24</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>25</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>26</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>27</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>28</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>29</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>30</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>31</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>32</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>33</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>34</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>35</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>36</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>37</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>38</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>39</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>40</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>41</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>42</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="current month">
+                                                            <div class="date"><span>1</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>2</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>3</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>4</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>5</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>6</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>7</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>8</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>9</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>10</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>11</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>12</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>13</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>14</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>15</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>16</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>17</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>18</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>19</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>20</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>21</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>22</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>23</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>24</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>25</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>26</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>27</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>28</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>29</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>30</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>31</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>32</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>33</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>34</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>35</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>36</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>37</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>38</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>39</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>40</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>41</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>42</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="next month">
+                                                            <div class="date"><span>1</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>2</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>3</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>4</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>5</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>6</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>7</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>8</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>9</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>10</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>11</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>12</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>13</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>14</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>15</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>16</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>17</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>18</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>19</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>20</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>21</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>22</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>23</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>24</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>25</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>26</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>27</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>28</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>29</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>30</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>31</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>32</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>33</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>34</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>35</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>36</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>37</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>38</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>39</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>40</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>41</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                            <div class="date"><span>42</span>
+                                                                <div class="ripple"></div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="year-slider section">
+                                                    <div class="years"></div>
+                                                </div>
+                                            </div>
+                                            <div class="bottom-controls" style = "color: #6789a2;">
+                                               <!-- <button class="btn-cancel">cancel</button>-->
+                                                <button class="btn-ok">ok</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </td>
+
+                            <td><button id = "search">검색</button></td>
+                            <td><button id = "today">오늘</button></td>
+                        </tr>
+                    </table>
+
+                    <!-- 차트그리기 -->
+                    <div class = "lineChart" style="position:relative; top:100px;">
+                        <div  id='chart-area'></div>
+                    </div>
+                    <div class = "columnChart" style="position:relative; top:100px;">
+                        <div id = 'chart-area2'></div>
+                    </div>
+                </div>
+            </div>
+            <div class = "right-box">
+                <div class = "right_content">
+                    <div class = kw>
+                        <img src = "assets/images/lightning.png" width="50px" height="50px"><br>
+                        전기사용량<br>
+                        <h2 id = usage>사용량 </h2>&nbsp;&nbsp;<h4>KW</h4><br><br>
+                        전기판매량<br>
+                        <h2 id = sales_rate>판매량 </h2>&nbsp;&nbsp;<h4>KW</h4>
+                    </div>
+                    <div class = pay>
+                        <img src = "assets/images/payment.png" width="50px" height="50px"><br>
+                        <h1 id = pay>0</h1><h2> 원</h2>
+                    </div>
+                    <div class = paybtn>
+                        <input type = "button" value = "결제하기" onclick="showPopup();">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" style = "height: 5%;">
+    <div class="container">
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        &copy; Untitled. All rights reserved.
+    </div>
+</footer>
+
+
+<!--오늘날짜 띄움-->
+<script src="assets/js/todaySearch.js"></script>
+<!--달력에서 날짜 정하고, 그래프 띄움-->
+<script src="assets/js/termSearch.js"></script>
+<!--결제하기 팝업창 띄움-->
+<script src = "assets/pay/payPopup.js"></script>
+<!--달 사용량, 판매량 컬럼차트-->
+<script src = "assets/js/month.js"></script>
+
+</body>
+</html>

@@ -3,7 +3,7 @@
 <head>
 
     <!--userPage CSS-->
-    <link rel = "stylesheet" type = "text/css" href = "assets/css/userPage.css">
+   <!-- <link rel = "stylesheet" type = "text/css" href = "assets/css/userPage.css">-->
     <!-- jQuery UI CSS파일-->
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!--tui-chart CSS-->
@@ -12,20 +12,52 @@
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/addon/lint/lint.css'/>
     <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.43.0/theme/neo.css'/>
 
+    <!--템플릿 CSS-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+
+
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>전력적 참견 시점</title>
 
 </head>
-<body>
-<div class="frame">
-    <div class = "header">
-        <div class = "header_text"><h1>User Page</h1></div>
-    </div>
+<body class="subpage">
 
-    <div class = "container">
+
+<!-- Header -->
+<header id="header">
+    <div class="logo"><a href="main.html">Hielo <span>by TEMPLATED</span></a></div>
+    <a href="#menu">Menu</a>
+</header>
+
+
+<!-- Nav -->
+<nav id="menu">
+    <ul class="links">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="logout.jsp">Logout</a></li>
+        <li><a href="adminPage.html">userpage</a></li>
+    </ul>
+</nav>
+
+
+<!-- One -->
+<section id="One" class="wrapper style3">
+    <div class="inner">
+        <header class="align-center">
+            <p>Power Interference Point</p>
+            <h2>User page</h2>
+        </header>
+    </div>
+</section>
+
+
+<!-- Two -->
+<section id="two" class="wrapper style2" style = "height : 1600px;  font-family: 나눔바른고딕;">
+    <div class = "container" style="height : 1400px; margin: auto;>
         <div class = "content" >
             <div class = "left-box">
                 <div class = "date">
+                    <hr width="100%", size = "1px", color="#516F85">
                     <table>
                         <tr>
                             <td><input name="start_date" type="text" id="start_date"></td>
@@ -34,23 +66,24 @@
                             <td><button id = "today">오늘</button></td>
                         </tr>
                     </table>
+                    <hr width="100%", size = "1px", color="#516F85">
                 </div>
                 <div class = lineChart>
-                <h1>그래프</h1>
-                <p>사용량과 판매량</p>
+                    <div style = "height: 40px;"></div>
                     <div  id='chart-area'></div>
                 </div>
+                <div style = "height: 40px;"></div>
                 <div class = columnChart>
-                    <h1>비교 그래프</h1>
+                    <div style = "height: 40px;"></div>
                     <div id = 'chart-area2'></div>
                 </div>
-                <div><h1>통계표 자리</h1></div>
+
 
             </div>
             <div class = "right-box">
                     <div class = "right_content">
                     <div class = kw>
-                        <h3>사용량</h3>
+                        <div><img src = "assets/images/lightning.png" width="30px" height="30px"></div>
                         <h2 id = usage>사용량 </h2>&nbsp;&nbsp;<h4>KW</h4><br>
                         <h3>판매량</h3>
                         <h2 id = sales_rate>판매량 </h2>&nbsp;&nbsp;<h4>KW</h4>
@@ -64,17 +97,31 @@
                 </div>
                     </div>
             </div>
-
         </div>
     </div>
-
-    <div class = "footer">
-        <div class = "bottom_text"><h3>footer</h3></div>
-    </div>
 </div>
+</section>
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<!--<script src="assets/js/jquery.min.js"></script>-->
+
+<!-- Footer -->
+<footer id="footer" style = "height: 5%;">
+    <div class="container">
+        <ul class="icons">
+            <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+        </ul>
+    </div>
+    <div class="copyright">
+        &copy; Untitled. All rights reserved.
+    </div>
+</footer>
+
+
+
+<!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
+<script src="assets/js/jquery.min.js"></script>
 <!-- jQuery UI 라이브러리 js파일 -->
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <!-- tui-chart script -->
@@ -88,9 +135,11 @@
 <!--달력에서 날짜 정하고, 그래프 띄움-->
 <script src = assets/js/date.js></script>
 <!--오늘날짜 띄움-->
-<script src = assets/js/todaySelect.js></script>
+<script src = assets/js/todaySearch.js></script>
 <!--결제하기 팝업창 띄움-->
-<script src = "assets/js/payPopup.js"></script>
+<script src = "assets/pay/payPopup.js"></script>
+<!--달 사용량, 판매량 컬럼차트-->
+<script src = "assets/js/month.js"></script>
 
 
 

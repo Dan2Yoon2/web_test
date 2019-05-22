@@ -1,4 +1,4 @@
-$(function () {
+
 
     let option = "";
 
@@ -17,16 +17,19 @@ $(function () {
         var month = date.getMonth() + 1;
         var day = date.getDate();
 
-        if (month.length == 1) {
+        if (month.toString().length == 1) {
             month = "0" + month;
 
         }
-        if (day.length == 1) {
+        if (day.toString().length == 1) {
             day = "0" + day;
         }
 
-        let today_date = year+"-"+month+"-"+day;
-
+        var today_date = year+"-"+month+"-"+day;
+        var start_date = document.getElementById('start_date');
+        var end_date = document.getElementById('end_date');
+        start_date.value = today_date;
+        end_date.value = today_date;
         dataSet(today_date);
 
         console.log("콘솔 : "+today_date);
@@ -40,13 +43,15 @@ $(function () {
         var dataset = {};
         options = {
             chart: {
-                title: 'line Graph'
+                width: 700,
+                height: 500,
+                title: '오늘의 전기사용량과 전기판매량'
             },
             yAxis: {
-                title: 'Electronic data',
+                title: 'KW',
             },
             xAxis: {
-                title: 'Hour',
+                title: '시간',
                 pointOnColumn: true,
                 /*min: 0,
                 max: 24,*/
@@ -71,10 +76,10 @@ $(function () {
     function dataSet(today_date) {
 
         $.ajax({
-            url: "http://192.168.1.24:9090//TodayEnergyController?today_date=2019-05-17",
+            url: "http://192.168.1.24:9090//TodayEnergyController",
             type: 'GET',
             data: {
-                //today_date: today_date
+                today_date: today_date
             },
             success: function (data) {
                 dataset = data
@@ -97,10 +102,24 @@ $(function () {
 
             },
             error: function () {
-                alert('Error message');
+                alert('오늘 Error message');
             }
         });
 
     }
 
-})
+    var date = new Date();
+    var year = date.getFullYear();
+    var month = date.getMonth() + 1;
+    var day = date.getDate();
+
+    if (month.toString().length == 1) {
+        month = "0" + month;
+
+    }
+    if (day.toString().length == 1) {
+        day = "0" + day;
+    }
+
+    var today_date = year+"-"+month+"-"+day;
+    dataSet("2019-05-24");
